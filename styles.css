@@ -191,7 +191,7 @@ button {
     width: 100%;
   }
   .card {
-    width: 80%;
+    width: 90%;
     flex-direction: column;
   }
   #histories {
