@@ -39,19 +39,12 @@
                 <div class="card-body">
                     <div>
                         <h2 class="card-title">03. How does work event loop in JavaScript?</h2>
-                        <p><strong>Map</strong>function is a manipulative function that can modify each element's content in an array that it is called on. This function returns a new array with modified values. This function is useful for adding a little change to an already existing array, for example adding a property to an object or modifying it. Its construction and use are identical to the previous function forEach() and both can be used interchangeably.</p>
+                        <p>The <strong>event loop</strong> is the secret behind JavaScript's asynchronous programming. JS executes all operations on a single thread, but using a few smart data structures, it gives us the illusion of multi-threading. </p>
+                        <p>The call stack is responsible for keeping track of all the operations in line to be executed. Whenever a function is finished, it is popped from the stack.</p>
+                        <p>The event queue is responsible for sending new functions to the stack for processing. It follows the queue data structure to maintain the correct sequence in which all operations should be sent for execution. Whenever an async function is called, it is sent to a browser API. These are APIs built into the browser. Based on the command received from the call stack, the API starts its own single-threaded operation.</p>
+                        <p>The event loop facilitates this process; it constantly checks whether or not the call stack is empty. If it is empty, new functions are added from the event queue. If it is not, then the current function call is processed.</p>
                     </div>
-                    <div>
-                        <p><strong>forEach</strong>function is another form of just a plain for loop that can be used to iterate through array items. This case of a function is used for more complex arrays, for example, an array of objects with a lot of entries than just an array of integers.</p>
-                    </div>
-                  
-                 <div>
-                    <p><strong>Filter</strong>function is a search function that returns all the elements that fulfil the assigned condition. You can search by simple terms, for example, that element is equal to a certain integer, or by more advanced terms, for example, searching for an object with certain property that is equal to something. Both examples have a very frequent use as a developer.</p>
-                 </div>
-                 <div>
-                    <p><strong>Find</strong>function is also a search function like the previous but they differ in one small detail — this function returns only one match in an array. If in an array is more than one result, the function will return the first that has matched.</p>
                 </div>
-              </div>
             </div>
             <div class="card lg:card-side mb-4 bg-base-100 border border-current shadow-xl">
                 <div class="card-body">
