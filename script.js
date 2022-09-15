@@ -73,6 +73,7 @@ const gameOver = () => {
   const finishTime = new Date().getTime();
   const timeTaken = (finishTime - startTime) / 1000;
 
+
   // show result modal
   resultModal.innerHTML = "";
   resultModal.classList.toggle("hidden");
@@ -91,6 +92,7 @@ const gameOver = () => {
 
   addHistory(questionText, timeTaken, errorCount);
 
+  
   // restart everything
   startTime = null;
   errorCount = 0;
